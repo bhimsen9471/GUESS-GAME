@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz Game</title>
+</head>
+<body onload="init()">
+    <main>
+        <div id="welcomeScreen">
+            <h2>Guess The Random Number Between 1-50</h2>
+            <img class="image" src="logo.png" alt="logo">
+            <section class="eventSection">
+                <p>Select The Difficulty</p>
+                <div class="button-wrapper">
+                    <button onclick="easyMode()">Easy:10 attempts</button>
+                    <button onclick="hardMode()">Hard:5 attempts</button>
+                </div>
+            </section>
+        </div>
+
+        <!-- GANE AREA -->
+        <div id="gameArea">
+            <div id="newGameButton">
+                <button onclick="newGameBegin()" >New Game</button>
+            </div>
+            <section>
+                <h3 id="textOutput" >Your Guess</h3>
+                <input type="number" id="inputBox" min="1" max="50" placeholder="Enter Your Guess" onchange="compareGuess()">
+            </section>
+            <div class="stats">
+                <div class="info">
+                    <p>Number of previous attempts</p>
+                    <span id="attempts">0</span>
+                </div>
+                <div class="info">
+                    <p>Number of previous guesses</p>
+                    <span id="guesses">0</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>

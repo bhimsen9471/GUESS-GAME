@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    --dark: rgb(42, 85, 131);
+    --background: rgb(183, 135, 135);
+}
+
+html{
+
+    font-size: 62%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: rgb(57, 104, 174);
+}
+
+main{
+
+    width: 30vw;
+    text-align: center;
+    background-color: var(--background);
+    border: solid var(--dark);
+    border-width: 8px;
+    border-radius: 10px;
+    padding: 80px 50px;
+    color: black;
+}
+
+h2{
+
+    font-size: 22px;
+    margin: 20px;
+    color: rgb(47, 5, 50);
+}
+
+h3{
+
+    font-size: 30px;
+}
+
+p{
+
+    font-size: 18px;
+    color: rgb(120, 198, 222);
+}
+
+.image{
+
+    width: 120%;
+    max-height: 220px;
+    height: auto;
+    margin: 10px 0 40px 0;
+}
+
+.button-wrapper{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+button{
+
+    min-width: 280px;
+    background-image: linear-gradient(90deg, rgb(191, 164, 233), rgb(109, 60, 233), rgb(43, 5, 236));
+    border-radius: 8px;
+    border-style: none;
+    color: white;
+    cursor: pointer;
+    padding: 25px 60px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: black 0 3px 8px;
+    /* transition: all 0.5s; */
+    user-select: none;
+    -webkit-user-select: none;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button:hover{
+
+    box-shadow: rgb(124, 132, 133) 0 1px 10px;
+    transition: 0.5s;
+}
+
+button:last-child{
+
+    background: rgb(98, 0, 255);
+    margin-bottom: 0;
+}
+
+/* gameArea */
+#gameArea{
+
+    /* height: 35vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#newGameButton button{
+
+    margin: 20px 0;
+}
+
+input{
+
+    border: 1px solid rgb(3, 3, 250);
+    background: transparent;
+    margin: 40px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.stats{
+
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.info{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.info span{
+
+    font-size: 20px;
+    color: rgb(176, 50, 50);
+}
