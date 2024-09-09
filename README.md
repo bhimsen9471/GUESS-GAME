@@ -2,6 +2,8 @@
 
 By BHIMSEN KUMAR
 
+Take a look at live version: https://bhimsen9471.github.io/GUESS-GAME/
+
 The "Guess the Number" game is a fun and interactive game that challenges players to guess a randomly generated number within a specified range. This simple yet addictive game is perfect for testing your luck, intuition, and number sense.
 
 Key Features:
